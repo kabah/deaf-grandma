@@ -4,11 +4,11 @@ loop do
 
 	answer = gets.chomp
 
-	case answer.upcase
+	case answer
 	when "GOODBYE GRANDMA"
 		puts "GRANDMA: OK BYE NOW, SONNY!"
 		break
-	when answer
+	when answer.upcase
 		puts "GRANDMA: No, not since 1928!"
 	else 
 		puts "GRANDMA: What's that Sonny?!"
@@ -18,11 +18,12 @@ end
 # loop do
 
 # 	answer = gets.chomp
-
-# 	if answer.upcase==true && "GOODBYE GRANDMA"
+# 	answer_up = answer.upcase
+	
+# 	if answer == "GOODBYE GRANDMA"
 # 		puts "GRANDMA: OK BYE NOW, SONNY!"
 # 		break
-# 	elsif answer.upcase==true
+# 	elsif answer_up == answer
 # 		puts "GRANDMA: No, not since 1928!"
 # 	else
 # 		puts "GRANDMA: What's that Sonny?!"
